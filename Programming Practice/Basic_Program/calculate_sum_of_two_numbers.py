@@ -1,11 +1,6 @@
-# Program to calculate the sum of two numbers
+h = int(input("enter diamond height: "))
 
-# Input: Prompt the user to enter two numbers
-number1 = float(input("Enter the first number: "))
-number2 = float(input("Enter the second number: "))
-
-# Process: Calculate the sum
-result = number1 + number2
-
-# Output: Display the result
-print(f"The sum of {number1} and {number2} is {result}")
+for x in range(h):
+    print(" " * (h-x), "*" * (2*x-1))
+for x in range(h-2,-1,-1):
+    print(" " * (h-x), "*" * (2*x-1))
