@@ -24,3 +24,5 @@ value = dict1.setdefault("gender", "Unknown")
 print(value)  # Output: "Unknown"
 print(dict1)  # Output: {"name": "John", "age": 30, "gender": "Unknown"}
 
+key = dict1.fromkeys("name")
+print(key)
