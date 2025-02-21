@@ -17,3 +17,15 @@ def area(r):
 
 
 area(4)
+
+#--------------------------
+
+import math
+
+def area(r):
+    area = math.pi * pow(r, 2)
+    return area
+
+radius = int(input("Enter the radius:\n"))
+circle_area = area(radius)
+print('Area of the circle is:', circle_area)
