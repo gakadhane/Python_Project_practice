@@ -1,26 +1,54 @@
-# Write a Python program to get a string from a given string where all occurrences of its first char have been changed to '$', except the first char itself.
-# Sample String : 'restartthecomputer'
-# Expected Result : 'resta$$$h$comp$$$'
+def outer_fun():
+    x = 10
+    def inner_fun():
+        nonlocal x
+        x = 20
+        print(x)
+    inner_fun()
+    print(x)
+outer_fun()
 
-def replace_specific_chars(s):
-    chars_to_replace = ['r', 't', 'e']
-    first_chars = {char: False for char in chars_to_replace}  # Track first occurrence
-    result = []
 
-    for i, char in enumerate(s):
-        if char in chars_to_replace:
-            if first_chars[char] == False:
-                result.append(char)
-                first_chars[char] = True
-            else:
-                result.append('$')
-        else:
-            result.append(char)
+x = 10
+def inner_fun():
+    x = 20
+    print(x)
+inner_fun()
+print(x)
 
-    return ''.join(result)
 
-# Sample usage
-sample_string = 'restartthecomputer'
-result = replace_specific_chars(sample_string)
-print(result)
+text = "   Hello   welcome  gaurav   "
+
+text1 = text.strip()
+text2 = text.split()
+text3 = text.replace("welcome", "star")
+text4 = text.lstrip()
+text5 = text.rstrip()
+text6 = text.rsplit()
+text7 = " ".join(text.split())
+print(text1)
+print(text2)
+print(text3)
+print(text4)
+print(text5)
+print(text6)
+print(text7)
+
+
+
+class parent():
+
+    @staticmethod
+    def add(a, b):
+        return a + b
+
+    @staticmethod
+    def sub(a, b):
+        return a-b
+
+print(f"addition of a and b is: {parent.add(10,5)}")
+
+
+
+
 

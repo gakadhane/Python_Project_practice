@@ -26,5 +26,39 @@ print(letters[4:])  # Output: ('e', 'f', 'g')
 print(letters[::2])  # Output: ('a', 'c', 'e', 'g')
 print(letters[::-1]) # Output: ('g', 'f', 'e', 'd', 'c', 'b', 'a') (reversed tuple)
 
+#----------------------------------------------------------------------------
 
 
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Slicing first 2 rows
+print("First 2 rows:", matrix[:2])
+
+# Slicing first 2 columns of each row
+print("First 2 columns of each row:", [row[:2] for row in matrix])
+
+# Slicing diagonal elements (not exactly slicing, but extracting for demonstration)
+print("Diagonal elements:", [matrix[i][i] for i in range(len(matrix))])
+
+#----------------------------------------------------------------------------
+
+
+sample_string = "Hello, World!"
+
+# Slicing only vowels from the string
+vowels = 'aeiouAEIOU'
+sliced_vowels = ''.join([char for char in sample_string if char in vowels])
+print("Vowels in the string:", sliced_vowels)
+
+#----------------------------------------------------------------------------
+
+sample_string = "Hello, World!"
+
+# Slicing only vowels from the string
+vowels = 'aeiouAEIOU'
+sliced_vowels = ''.join([char for char in sample_string if char not in vowels])
+print("Vowels in the string:", sliced_vowels)

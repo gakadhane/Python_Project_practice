@@ -6,6 +6,7 @@ def reverse_string(rs):
 Reverse_String = reverse_string("Hello")
 print(Reverse_String)
 
+#----------------------------------------------------------------------------
 
 # Using a loop:
 def reverse_string(s):
@@ -18,6 +19,7 @@ def reverse_string(s):
 Reverse_String = reverse_string("Hello")
 print(Reverse_String)
 
+#----------------------------------------------------------------------------
 
 # reverse a string using a recursive function:
 def reverse_string(s):
@@ -32,6 +34,7 @@ print("Original string:", example_string)
 print("Reversed string:", reversed_string)
 
 
+#----------------------------------------------------------------------------
 # Using the reversed() function:
 def reverse_string(s):
     return (''.join(reversed(s)))
