@@ -1,3 +1,4 @@
+# Base Class Animal: The Animal class defines an abstract method speak() using raise NotImplementedError, signaling that subclasses must implement this method.
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -5,6 +6,7 @@ class Animal:
     def speak(self):
         raise NotImplementedError("Subclass must implement abstract method")
 
+# Derived Classes (Dog, Cat, Bird): Each derived class (Dog, Cat, Bird) overrides the speak() method to provide specific implementations.
 class Dog(Animal):
     def speak(self):
         return f"{self.name} says Woof!"
@@ -17,6 +19,8 @@ class Bird(Animal):
     def speak(self):
         return f"{self.name} says Tweet!"
 
+# Polymorphic Function animal_sound:The animal_sound function demonstrates polymorphism by accepting an Animal object and
+# calling its speak() method, which behaves differently based on the object's class.
 # Function to demonstrate polymorphism
 def animal_sound(Animal):
     print(Animal.speak())

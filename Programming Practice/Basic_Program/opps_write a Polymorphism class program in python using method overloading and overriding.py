@@ -19,7 +19,7 @@ class Rectangle(Shape):
     def area(self):
         return self.length * self.width
 
-class Calculator:
+class Calculator():
     # Simulating Method Overloading using variable-length arguments
     def add(self, *args):
         return sum(args)
@@ -37,6 +37,7 @@ display_area(rectangle) # Output: The area of the rectangle is 24
 
 # Demonstrating method overloading-like behavior
 calculator = Calculator()
+print("Sum of 2 and 3:", Calculator.add(2, 3))
 print("Sum of 2 and 3:", calculator.add(2, 3))           # Output: Sum of 2 and 3: 5
 print("Sum of 1, 2, 3, and 4:", calculator.add(1, 2, 3, 4)) # Output: Sum of 1, 2, 3, and 4: 10
 
