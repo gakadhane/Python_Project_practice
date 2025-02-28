@@ -1,7 +1,7 @@
 class Person:
     def __init__(self, name, age, salary):
-        self.name = name  # Public attribute
-        self._age = age   # Protected attribute
+        self.name = name  # Public attribute - accessed directly from outside the class.
+        self._age = age   # Protected attribute - not be accessed directly from outside the class.
         self.__salary = salary  # Private attribute
 
     # Public method
