@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 # Abstract base class
 class Vehicle(ABC):
     @abstractmethod
@@ -12,6 +13,7 @@ class Vehicle(ABC):
 
     def display_info(self):
         print(f"This is a {self.__class__.__name__}")
+
 
 # Derived class
 class Car(Vehicle):
@@ -29,6 +31,7 @@ class Car(Vehicle):
         super().display_info()
         print(f"Make: {self.make}, Model: {self.model}")
 
+
 # Another derived class
 class Motorcycle(Vehicle):
     def __init__(self, make, model):
@@ -45,6 +48,7 @@ class Motorcycle(Vehicle):
         super().display_info()
         print(f"Make: {self.make}, Model: {self.model}")
 
+
 # Sample usage
 car = Car("Toyota", "Corolla")
 motorcycle = Motorcycle("Yamaha", "MT-07")
@@ -53,14 +57,11 @@ car.display_info()
 car.start_engine()
 car.stop_engine()
 
-print()
+print("\n")
 
 motorcycle.display_info()
 motorcycle.start_engine()
 motorcycle.stop_engine()
-
-
-
 
 # Explanation:
 # Abstract Base Class Vehicle:

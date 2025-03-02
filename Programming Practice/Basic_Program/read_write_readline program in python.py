@@ -8,7 +8,6 @@ with open('example.txt', 'r') as file:
     print("Content of the file:")
     print(content)
 
-
 # Reading the file line by line
 with open('example.txt', 'r') as file:
     print("Reading lines one by one:")

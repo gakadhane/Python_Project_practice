@@ -1,7 +1,7 @@
 class Person:
     def __init__(self, name, age, salary):
         self.name = name  # Public attribute - accessed directly from outside the class.
-        self._age = age   # Protected attribute - not be accessed directly from outside the class.
+        self._age = age  # Protected attribute - not be accessed directly from outside the class.
         self.__salary = salary  # Private attribute
 
     # Public method
@@ -21,6 +21,7 @@ class Person:
         else:
             print("Invalid salary amount")
 
+
 # Derived class
 class Employee(Person):
     def __init__(self, name, age, salary, employee_id):
@@ -31,6 +32,7 @@ class Employee(Person):
     def display_employee_info(self):
         print(f"Employee ID: {self.employee_id}")
         self.display_info()
+
 
 # Sample usage
 employee = Employee("John Doe", 30, 50000, "E12345")
@@ -54,8 +56,6 @@ print("Accessing private attribute using getter:", employee.get_salary())
 # Modifying private attribute using setter
 employee.set_salary(55000)
 print("Updated salary:", employee.get_salary())
-
-
 
 # Explanation:
 # Public Attributes and Methods:

@@ -6,34 +6,39 @@ class Animal:
     def speak(self):
         raise NotImplementedError("Subclass must implement abstract method")
 
+
 # Derived class
 class Dog(Animal):
-    def __init__(self, name, breed):
+    def __init__(self, name, breed, color):
         super().__init__(name)
+        super().__init__(color)
+        self.name = name
+        self.color = color
         self.breed = breed
 
     def speak(self):
-        return f"{self.name} says Woof!"
+        return f"{self.name} says Woof! and Dog breed is: {self.breed} and dog colour is: {self.color} "
+
 
 # Another Derived class
 class Cat(Animal):
-    def __init__(self, name, color):
+    def __init__(self, name, breed, color):
         super().__init__(name)
+        super().__init__(breed)
+        self.name = name
+        self.breed = breed
         self.color = color
 
     def speak(self):
-        return f"{self.name} says Meow!"
+        return f"{self.name} says Meow! and cat breed is: {self.breed} and cat colour is: {self.color}"
+
 
 # Sample usage
-dog = Dog("Buddy", "Golden Retriever")
-cat = Cat("Whiskers", "Gray")
+dog = Dog("Buddy", "Golden Retriever", "black")
+cat = Cat("Whiskers", "parsin", "Gray")
 
 print(dog.speak())  # Output: Buddy says Woof!
 print(cat.speak())  # Output: Whiskers says Meow!
-
-
-
-
 
 # Explanation:
 # Base Class Animal:
@@ -50,4 +55,3 @@ print(cat.speak())  # Output: Whiskers says Meow!
 #
 # Sample Usage:
 # Instances of Dog and Cat classes are created, and their speak methods are called to demonstrate the functionality.
-

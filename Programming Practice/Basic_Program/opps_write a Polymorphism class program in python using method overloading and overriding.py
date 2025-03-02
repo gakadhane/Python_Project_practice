@@ -2,6 +2,7 @@ class Shape:
     def area(self):
         raise NotImplementedError("Subclass must implement abstract method")
 
+
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
@@ -9,6 +10,7 @@ class Circle(Shape):
     # Method Overriding
     def area(self):
         return 3.14159 * self.radius * self.radius
+
 
 class Rectangle(Shape):
     def __init__(self, length, width):
@@ -19,32 +21,30 @@ class Rectangle(Shape):
     def area(self):
         return self.length * self.width
 
+
 class Calculator():
     # Simulating Method Overloading using variable-length arguments
     def add(self, *args):
         return sum(args)
 
+
 # Function to demonstrate polymorphism
 def display_area(shape):
     print(f"The area of the {type(shape).__name__.lower()} is {shape.area()}")
+
 
 # Sample usage
 circle = Circle(5)
 rectangle = Rectangle(4, 6)
 
-display_area(circle)    # Output: The area of the circle is 78.53975
-display_area(rectangle) # Output: The area of the rectangle is 24
+display_area(circle)  # Output: The area of the circle is 78.53975
+display_area(rectangle)  # Output: The area of the rectangle is 24
 
 # Demonstrating method overloading-like behavior
 calculator = Calculator()
 print("Sum of 2 and 3:", Calculator.add(2, 3))
-print("Sum of 2 and 3:", calculator.add(2, 3))           # Output: Sum of 2 and 3: 5
-print("Sum of 1, 2, 3, and 4:", calculator.add(1, 2, 3, 4)) # Output: Sum of 1, 2, 3, and 4: 10
-
-
-
-
-
+print("Sum of 2 and 3:", calculator.add(2, 3))  # Output: Sum of 2 and 3: 5
+print("Sum of 1, 2, 3, and 4:", calculator.add(1, 2, 3, 4))  # Output: Sum of 1, 2, 3, and 4: 10
 
 # Explanation:
 # Base Class Shape:
