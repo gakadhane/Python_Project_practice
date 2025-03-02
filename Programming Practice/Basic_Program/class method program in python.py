@@ -8,5 +8,6 @@ class car:
 
 car1 = car("toyota", "red")
 car2 = car("tata","black")
+
 car.display_info(car1)
 car.display_info(car2)
