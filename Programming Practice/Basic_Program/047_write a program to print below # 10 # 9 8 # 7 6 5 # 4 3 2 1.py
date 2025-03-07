@@ -1,14 +1,22 @@
+from itertools import count
+
+
 def print_pattern():
     num = 10
+    count = 4
     while num > 0:
         print("#", end=" ")
-        for _ in range(3):
+        for _ in range(count):
             if num > 0:
                 print(num, end=" ")
                 num -= 1
         print()
+        count -= 1
 
 print_pattern()
+
+
+
 
 def print_pattern():
     num = 10
