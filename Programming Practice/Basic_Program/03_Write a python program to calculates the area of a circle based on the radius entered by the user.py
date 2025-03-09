@@ -20,7 +20,6 @@ area(4)
 
 #--------------------------
 
-import math
 
 def area(r):
     area = math.pi * pow(r, 2)

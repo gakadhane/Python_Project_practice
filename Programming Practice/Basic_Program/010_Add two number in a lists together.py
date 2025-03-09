@@ -9,3 +9,4 @@ print(combined_list)
 
 list1.extend(list2)
 print(list1)
+

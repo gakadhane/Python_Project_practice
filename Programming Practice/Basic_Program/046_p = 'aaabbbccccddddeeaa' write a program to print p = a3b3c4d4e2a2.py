@@ -16,3 +16,6 @@ def compress_string(s):
 p = 'aaabbbccccddddeeaa'
 compressed_p = compress_string(p)
 print(f"p = {compressed_p}")
+
+
+

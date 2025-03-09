@@ -7,6 +7,8 @@ calu = calculator()
 result = calu.add(10, 20)
 print(result)
 
+result3 = calculator().add(30,  40)
+print(result3)
 
 # both program difference is calu = calculator() and calu = calculator
 

@@ -13,3 +13,5 @@ sum_of_two_number = add(num1, num2)
 
 # To print the result
 print("sum of {0} and {1} is {2};".format(num1, num2, sum_of_two_number))
+
+print("sum {0}".format(num1,num2,sum_of_two_number))
