@@ -1,5 +1,3 @@
-from itertools import count
-
 
 def print_pattern():
     num = 10
@@ -37,3 +35,4 @@ print_pattern()
 # 9 8
 # 7 6 5
 # 4 3 2 1
+

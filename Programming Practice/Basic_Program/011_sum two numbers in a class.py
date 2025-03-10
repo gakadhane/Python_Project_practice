@@ -24,3 +24,5 @@ print(result1)
 
 result2 = calculator.add(0, 20, 20)
 print(result2)
+
+
