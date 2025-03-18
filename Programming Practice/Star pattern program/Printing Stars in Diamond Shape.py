@@ -39,3 +39,16 @@ def pyramid(row):
 
 num_star = int(input("Enter the number of rows: "))
 pyramid(num_star)
+
+# Enter the number of rows: 6
+#      *
+#     * *
+#    * * *
+#   * * * *
+#  * * * * *
+# * * * * * *
+#  * * * * *
+#   * * * *
+#    * * *
+#     * *
+#      *

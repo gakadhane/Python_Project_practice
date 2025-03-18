@@ -5,3 +5,9 @@ for row in range(1, num + 1):
         print(n, end="")
         n = n + 1
     print()
+# O/P: enter the number: 5
+# 1
+# 23
+# 456
+# 78910
+# 1112131415

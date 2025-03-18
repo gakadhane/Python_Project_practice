@@ -1,4 +1,4 @@
-
+# missing number in list
 # [3,4,6,7,8,9,10] o/p:5
 
 nums = [3, 4, 6, 7, 8, 9, 10]
@@ -102,3 +102,14 @@ def count_up_to(max):
 counter = count_up_to(5)
 print(next(counter))  # Output: 1
 print(next(counter))  # Output: 2
+
+
+
+str = "India Is My Country"
+o/p : Country My Is India
+o/p : yrtnuoC yM sI aidnI
+
+
+
+i/p :  aabbssdefd
+o/p: a=2 , b=2, s=2, d=2, e=1, f=1

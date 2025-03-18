@@ -6,6 +6,12 @@ for i in range(num):
         print(chr(k), end="")
         k = k + 1
     print()
+# O/P:enter the number5
+# A
+# BC
+# DEF
+# GHIJ
+# KLMNO
 
 num = int(input("enter the number"))
 
@@ -15,3 +21,9 @@ for i in range(num):
         print(chr(k), end="")
         k = k + 1
     print()
+# O/P:enter the number5
+# A
+# BC
+# CDE
+# DEFG
+# EFGHI

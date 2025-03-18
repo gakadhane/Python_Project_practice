@@ -7,3 +7,9 @@ for row in range(0, num):
         else:
             print(end=" ")
     print()
+# enter the number: 5
+# *****
+#  *  *
+#   * *
+#    **
+#     *

@@ -8,3 +8,9 @@ def pattern(num):
 
 num = int(input("enter the number:"))
 pattern(num)
+# O/P: enter the number:5
+# *
+# **
+# ***
+# ****
+# *****

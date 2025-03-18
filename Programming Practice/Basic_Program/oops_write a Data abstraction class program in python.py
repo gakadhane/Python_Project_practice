@@ -1,19 +1,14 @@
 from abc import ABC, abstractmethod
-
-
 # Abstract base class
 class Vehicle(ABC):
     @abstractmethod
     def start_engine(self):
         pass
-
     @abstractmethod
     def stop_engine(self):
         pass
-
     def display_info(self):
         print(f"This is a {self.__class__.__name__}")
-
 
 # Derived class
 class Car(Vehicle):
@@ -30,7 +25,6 @@ class Car(Vehicle):
     def display_info(self):
         super().display_info()
         print(f"Make: {self.make}, Model: {self.model}")
-
 
 # Another derived class
 class Motorcycle(Vehicle):

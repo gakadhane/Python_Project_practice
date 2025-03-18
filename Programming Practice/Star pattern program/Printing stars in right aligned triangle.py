@@ -9,3 +9,9 @@ def right_aligned_triangle(n):
 
 num_stars = int(input("Enter the number of rows:\n1 "))
 right_aligned_triangle(num_stars)
+# Enter the number of rows:5
+#         *
+#       * *
+#     * * *
+#   * * * *
+# * * * * *

@@ -2,7 +2,6 @@
 # Sample String : 'restartthecomputer'
 # Expected Result : 'resta$$$h$comp$$$'
 
-
 # Function Definition: This defines a function named replace_specific_chars that takes a single argument s which is expected to be a string.
 def replace_specific_chars(s):
     # List of Characters to Replace: Here, we create a list of characters chars_to_replace that we want to track and possibly replace in the input string.
@@ -36,7 +35,6 @@ def replace_specific_chars(s):
             result.append(char)
     # Join Result List to Form Final String: We join the elements of the result list into a single string and return it.
     return ''.join(result)
-
 
 # Sample usage: We define a sample string sample_string and call the replace_specific_chars function with this string.
 # The result is then printed.
