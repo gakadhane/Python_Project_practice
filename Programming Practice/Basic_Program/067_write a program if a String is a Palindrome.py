@@ -55,3 +55,12 @@ if is_palindrome_recursive(test_str):
 else:
     print(f'"{test_str}" is NOT a palindrome.')
 
+#------------------------------------------------------------------------
+
+def is_palidrom(stirng):
+    string = string.lower().replace(" ", "")
+    return string == string[::-1]
+
+
+string = input("enter the string:")
+

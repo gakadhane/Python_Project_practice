@@ -1,19 +1,25 @@
+from playwright.sync_api import expect
+
+from Python_Project_practice.prac import result
 
 
-def fibonacci(n):
-    a, b = 0, 1
-    for _ in range(n):
-        print(a, end=' ')
-        a, b = b, a + b
+def text_list():
+    num_list([5,4,4,3])
 
-fibonacci(10)
+def num_list(list1):
+    num = list(dict.fromkeys(list1))
+    return num
+
+print(text_list())
+
+[(5, 4, 4, 3), (5, 4, 5), (5, 2, 2, 4), (5, 2, 4)]
 
 
-import pytest
 
-@pytest.mark.parametrize("a", [1, 2, 3])
-@pytest.mark.parametrize("b", [4, 5])
-def test_multiplication(a, b):
-    result = a * b
-    print(f"Testing: {a} * {b} = {result}")
-    assert result == a * b
+def str_tup(a,b,c,d):
+    return a+b+c+d
+
+@pytest_mark_parametarize([(5,4,4,3),(5,4,5),(5,2,2,4),(5,2,4)])
+def test_cal("input, expected"):
+    result = calcualte_result(*input)
+    assert result == expected
