@@ -1,11 +1,31 @@
-def palin(s):
+def palindrome(s):
+    return s == s[::-1]
+print(palindrome("madam"))
 
+# --------------------------------------------------------------------------------------------
+
+def is_palidrom(string):
+    string = string.lower().replace(" ", "")
+    return string == string[::-1]
+
+string = input("enter the string:")
+
+# ----------------------------------------------------------------------------------------------
+
+def is_palindrome(s):
+    # Remove spaces and convert the string to lowercase for uniformity
+    s = ''.join(char.lower() for char in s if char.isalnum())  # Keep only alphanumeric characters
+    # Check if the string is equal to its reverse
     return s == s[::-1]
 
-print(palin("madam"))
+# Test the function
+test_string = input("Enter a string to check if it's a palindrome: ")
+if is_palindrome(test_string):
+    print(f'"{test_string}" is a palindrome!')
+else:
+    print(f'"{test_string}" is not a palindrome.')
 
-# ------------------------------------
-
+#-------------------------------------------------------------------------------------------
 def is_palindrome(s):
     # Remove spaces, punctuation, and make the string lowercase
     cleaned_str = ''.join(char.lower() for char in s if char.isalnum())
@@ -27,9 +47,7 @@ if is_palindrome(test_str):
 else:
     print(f'"{test_str}" is NOT a palindrome.')
 
-
-
-# --------------------------------
+# --------------------------------------------------------------------
 
 def is_palindrome_recursive(s):
     # Remove non-alphanumeric characters and convert to lowercase
@@ -56,11 +74,4 @@ else:
     print(f'"{test_str}" is NOT a palindrome.')
 
 #------------------------------------------------------------------------
-
-def is_palidrom(stirng):
-    string = string.lower().replace(" ", "")
-    return string == string[::-1]
-
-
-string = input("enter the string:")
 

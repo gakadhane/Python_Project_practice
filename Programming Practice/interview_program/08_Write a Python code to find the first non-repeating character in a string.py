@@ -8,7 +8,7 @@ def first_repeating_char(s):
     return None  # Return None if there are no repeating characters
 
 # Test the function
-print(first_repeating_char("nxtwavea"))  # Output: a
+print(first_repeating_char("missing"))  # Output: a
 
 #--------------------------------------------------------------------------
 def all_repeating_chars(s):
@@ -27,3 +27,17 @@ def all_repeating_chars(s):
 
 # Test the function
 print(all_repeating_chars("nxttwaveae"))  # Output: ['t', 'a']
+
+#------------------------------------------------------------------------------------------
+
+def non_repeating(char):
+    for i in char:
+        count = 0
+        for k in char:
+            if i == k:
+                count += 1
+            if count > 1:
+                break
+        if count == 1:
+            print(i, end="")
+non_repeating("missing")
